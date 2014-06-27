@@ -1,0 +1,25 @@
+{
+  "name": "aquilaLib",
+  "version": "0.0.1",
+  "author": "Rodrigo Mendez",
+  "private": true,
+  "scripts": {
+    "test": "grunt",
+    "start": "node monitor"
+  },
+  "main": "./aquilalib",
+  "dependencies": {
+    "serialport": "*",
+    "buffertools": "*",
+    "async": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "*",
+    "browserify-buffertools": "*",
+    "grunt-contrib-jshint": "~0.10.0"
+  },
+  "browser": {
+    "buffertools": "browserify-buffertools"
+  }
+}

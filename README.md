@@ -39,7 +39,7 @@ Aq(["02:3B:45:00:00:20:98:23", "02:3B:45:00:00:20:98:32"]);		// Devuelve los dis
 	- Aq.reload(callback): Elimina todos los dispositivos descubiertos y vuelve a realizar el descubrimiento. Al terminar llama a callback.
 
 - Aq.manager: manejador de dispositivos. Éste hace el trabajo duro de descubrir y mantener los dispositivos. Define los siguientes eventos útiles para la API:
-	- "ready" *(Sólo en el servidor): Al iniciar la ejecución del servidor, inicializa el puente USB y el protocolo, para luego emitir este evento. *No se deben hacer requests antes de haber recibido este evento.
+	- "ready": Al iniciar la ejecución del servidor, inicializa el puente USB y el protocolo, para luego emitir este evento. *No se deben hacer requests antes de haber recibido este evento.
 	- "deviceAdded": emitido cuando se descubre o vuelve activo un dispositivo. útil para actualizar la interfaz.
 	- "deviceRemoved": emitido cuando un dispositivo pasa a estado inactivo (se apaga o sale de rango).
 

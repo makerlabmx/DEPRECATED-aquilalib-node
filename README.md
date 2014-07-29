@@ -35,6 +35,8 @@ Aq(["02:3B:45:00:00:20:98:23", "02:3B:45:00:00:20:98:32"]);		// Devuelve los dis
 ```
 
 - Funciones de Aq:
+	- Aq.getPAN(): Devuelve la PAN actual.
+	- Aq.setPAN(pan): Configura la PAN.
 	- Aq.update(callback): Manda un mensaje broadcast de descubrimiento de dispositivos, llama callback al terminar.
 	- Aq.reload(callback): Elimina todos los dispositivos descubiertos y vuelve a realizar el descubrimiento. Al terminar llama a callback.
 

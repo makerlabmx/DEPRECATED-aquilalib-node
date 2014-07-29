@@ -35,8 +35,8 @@ Aq(["02:3B:45:00:00:20:98:23", "02:3B:45:00:00:20:98:32"]);		// Devuelve los dis
 ```
 
 - Funciones de Aq:
-	- Aq.getPAN(): Devuelve la PAN actual.
-	- Aq.setPAN(pan): Configura la PAN.
+	- Aq.getPAN(callback): Devuelve la PAN actual como parámetro para la función callback.
+	- Aq.setPAN(pan, callback): Configura la PAN, devuelve la PAN como parámetro para la función callback.
 	- Aq.update(callback): Manda un mensaje broadcast de descubrimiento de dispositivos, llama callback al terminar.
 	- Aq.reload(callback): Elimina todos los dispositivos descubiertos y vuelve a realizar el descubrimiento. Al terminar llama a callback.
 
@@ -49,6 +49,7 @@ Aq(["02:3B:45:00:00:20:98:23", "02:3B:45:00:00:20:98:32"]);		// Devuelve los dis
 Tipo de objeto que devuelve la función Aq(), funciona como un array de dispositivos pero con el agregado de que se pueden llamar varias de las funciones de dispositivo sobre él, con lo que se realizará dicha función en todos los dispositivos seleccionados.
 
 - Funciones de AquilaDevices:
+	- AquilaDevices.setName(name): Cambia el nombre del dispositivo y lo guarda en la base de datos.
 	- AquilaDevices.action(action, param): Ejecuta la acción "action" con el parámetro "param" (opcional) en todos los dispositivos seleccionados. action puede ser el nombre o número de la acción. param es un número de 0 a 255.
 	- AquilaDevices.clearEntries(callback): Limpia todas las entradas de configuración en los dispositivos seleccionados, al terminar llama a callback con parámetro err (si hubo error).
 	- AquilaDevices.addEntry(entry, callback): añade la entrada "entry", al terminar llama a callback con parámetro err. entry es un objeto de tipo Entry.

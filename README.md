@@ -101,12 +101,12 @@ Usada para representar los dispositivos individuales dentro de AquilaDevices. Im
 	- Device.ping(callback): hace un ping al dispositivo y llama a callback con err.
 	- Otras de uso interno.
 
-- Eventos: cuando el dispositivo emite un evento. se puede suscribir una función con `Device.on(<nombre del evento>, <mi función>);`
+- Eventos: cuando el dispositivo emite un evento. se puede suscribir una función con `Device.on(<nombre del evento>, <mi función>);`, el evento puede incluir un parámetro, que se recibe como el primer parámetro de la función, o es null si no hay.
 
 Ejemplo:
 
 ```
-Aq("Dimmer")[0].on("Apagado", function()
+Aq("Dimmer")[0].on("Apagado", function(param)
 {
 	console.log("Se apagó el Dimmer");
 });

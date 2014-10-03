@@ -2,10 +2,11 @@
  *	App configuration parameters
  */
 
-var config = {};
+module.exports = {
 
-// Bridge connection parameters:
-//config.PORT = "/dev/tty.usbmodem2642";
-config.BAUDRATE = 57600;
+	// Bridge connection parameters:
+	baudrate: 57600,
+	// Serial port, looks like "/dev/cu.usbserial-DA00XMCT", null = auto
+	port: null,
 
-module.exports = config;
+};

@@ -5,6 +5,26 @@ Se basa en un selector `Aq()` que funciona de forma similar a jQuery, pero en ve
 
 Esta api se puede usar ya sea directamente en el servidor o en el navegador del cliente. Las funciones mostradas a continuación funcionan de la misma forma en ambas plataformas, excepto cuando se mencione lo contrario.
 
+## Instalación y uso del Monitor
+
+El Monitor es una herramienta para monitorear, controlar y hacer pruebas sobre la red Aquila desde la línea de comandos.
+
+1. Instala nodejs desde [http://nodejs.org](http://nodejs.org)
+2. Clona este repositorio
+
+		git clone https://github.com/makerlabmx/aquilalib-node.git
+		
+3. Entra en la carpeta clonada e instala las dependencias
+
+		cd aquilalib-node
+		npm install
+		
+4. Conecta el Altair programado como "bridge" e inicia el monitor:
+
+		node monitor.js
+		
+5. Puedes usar los comandos mencionados a continuación en la sección "Funciones de la API"
+
 ## Uso en el servidor:
 
 Añade las siguientes dependencias:

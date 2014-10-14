@@ -9,7 +9,7 @@ Esta api se puede usar ya sea directamente en el servidor o en el navegador del 
 
 El Monitor es una herramienta para monitorear, controlar y hacer pruebas sobre la red Aquila desde la línea de comandos.
 
-1. Instala nodejs desde [http://nodejs.org](http://nodejs.org)
+1. Instala los prerequisitos según tu sistema operativo: http://community.aquila.io/t/instalacion-de-software-hub-aquila-prerequisitos-para-windows-mac-osx-y-linux/43/1
 2. Clona este repositorio
 
 		git clone https://github.com/makerlabmx/aquilalib-node.git

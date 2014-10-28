@@ -1,4 +1,6 @@
-# Aquila API
+# [OBSOLETO] Aquila API
+
+# ESTE SOFTWARE ES OBSOLETO, ha sido reemplazado por: [aquila-client-node](https://github.com/makerlabmx/aquila-client-node)
 
 Biblioteca estilo jQuery para el manejo de los dispositivos en la red Aquila.
 Se basa en un selector `Aq()` que funciona de forma similar a jQuery, pero en vez de seleccionar elementos en el DOM, selecciona dispositivos descubiertos en la cercanía del Hub, utilizando su dirección, nombre o clase.
